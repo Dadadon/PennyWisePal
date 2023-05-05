@@ -1,0 +1,18 @@
+# app/views/categories/show.html.erb
+<%= link_to "< Back", categories_path %>
+<h1><%= @category.name %></h1>
+<p><%= image_tag(@category.icon) %></p>
+<p>Total amount: <%= number_to_currency(@category.total_amount) %></p>
+
+<h2>Payments</h2>
+<ul>
+  <% @category.payments.order(created_at: :desc).each do |payment| %>
+    <li>
+      <%= payment.name %>
+      <%= number_to_currency(payment.amount) %>
+      <%= payment.date.strftime("%b %d, %Y") %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add Payment", new_category_payment_path(@category) %>
