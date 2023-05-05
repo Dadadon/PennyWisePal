@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'pages#splash'
   get '/categories', to: 'categories#index', as: 'categories'
-
+  resources :categories do
+    resources :payments, only: [:index, :new, :create]
+  end
+  
 end
