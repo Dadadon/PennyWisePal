@@ -1,0 +1,12 @@
+<h1>Categories</h1>
+<ul>
+  <% @categories.each do |category| %>
+    <li>
+      <h2><%= category.name %></h2>
+      <%= image_tag category.icon %>
+      <p>Total amount: <%= category.total_amount %></p>
+      <%= link_to "View transactions", category_path(category) %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Add a new category", new_category_path %>
