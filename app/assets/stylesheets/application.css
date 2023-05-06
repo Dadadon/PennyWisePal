@@ -455,3 +455,8 @@ body {
 .forgotDummy {
   display: inline-block;
 }
+
+.category-name {
+  text-decoration: none;
+  color: #434b54;
+}
