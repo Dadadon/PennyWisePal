@@ -53,24 +53,24 @@ To run the project, you'll need the following:
 - Ruby on Rails (version X.X.X)
 - PostgreSQL
 
-### Installation <a name="installation"></a>
+### Setup
 
-1. Clone the repository to your local machine:
+Clone the repository to your local machine:
 
-   git clone https://github.com/your-username/pennywisepal.git
+   git clone https://github.com/dadadon/pennywisepal.git
 
-2. Navigate to the project directory:
+### Install <a name="installation"></a>
+
+1. Navigate to the project directory:
 
   cd pennywisepal
 
-3. Install the required gems:
+2. Install the required gems:
 
-  Copy code
   bundle install
 
-4. Set up the database:
+3. Set up the database:
 
-  Copy code
   rails db:setup
 
 
@@ -131,9 +131,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project feel free to contribute or reach out so we can discuss ideas for improvements
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
