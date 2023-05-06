@@ -383,6 +383,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white;
     width: 90%;
     margin-left: 3%;
+    padding: 0;
+    margin-bottom: 1rem;
   }
 
   .mov-login-field {
@@ -423,6 +425,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-grow: 1;
     border-top: 2px solid rgb(243, 243, 243);
     padding: 10px;
+    width: 100%;
     transition: background-color 0.3s ease-in-out;
   }
 
@@ -432,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid rgb(243, 243, 243);
     padding: 10px;
     transition: background-color 0.3s ease-in-out;
-    width: 90%;
+    width: 100%;
   }
   
   .submitNext {
@@ -456,7 +459,16 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 95%;
-    margin-left: 5%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 3%;
+  }
+
+  .forgotPassword {
+    text-align: center;
+  }
+  
+  .forgotDummy {
+    display: inline-block;
   }
