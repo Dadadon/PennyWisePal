@@ -9,8 +9,8 @@ RSpec.describe CategoriesController, type: :request do
     @user.save
     login_as(@user, scope: :user)
     @category = Category.create!(name: 'Food',
-                                 icon: 'https://media.istockphoto.com/id/1481730340/photo/gray-hair-man-cooking-healthy-meal-in-modern-apartment.jpg'\
-                                       '?s=612x612&w=is&k=20&c=AL4fSbJx9QJ8iEsETWT1hjsIigsfQ8HfmNerlkpLveE=', user: @user)
+                                 icon: 'https://media.istockphoto.com/id/1481730340/photo/',
+                                 user: @user)
   end
 
   describe 'GET /index' do
