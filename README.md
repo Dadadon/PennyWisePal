@@ -38,7 +38,7 @@ The project is built using the following technologies:
 
 ### Live Demo <a name="live-demo"></a>
 
-A live demo of Pennywisepal can be accessed [here](https://your-live-demo-link.com).
+A live demo of Pennywisepal can be accessed [here](https://pennywisepal.onrender.com/).
 A video demo can be found [here](https://www.loom.com/share/921f8efb29fc4c51aeb2fdc56a2e236b)
 
 ## Getting Started <a name="getting-started"></a>
