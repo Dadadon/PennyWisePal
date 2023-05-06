@@ -1,31 +1,27 @@
 <!-- app/views/categories/new.html.erb -->
 
-<h1>New Category</h1>
+
 
 <%= form_for @category do |f| %>
-  <% if @category.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
-
-      <ul>
-      <% @category.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+   <div class="new-category-header">
+      <div class ="back-arrow">
+        <%= link_to categories_path do %>
+          <%= image_tag "back_arrow.png", alt: "Back Arrow", class: "back-arrow-img" %>
+        <% end %>
+      </div>
+     <h1>New Category</h1>
+      <%= f.submit "Create", class: "cat-button" %>
     </div>
-  <% end %>
+    <div class="field-name-new-category">
+    <h2 class="Add name">Add a Category name</h2>
+      <%= f.text_field :name, autocomplete: "category name", placeholder: "Name", class: "login-field" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
 
-  <div class="field">
-    <%= f.label :icon %>
-    <%= f.text_field :icon %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Create Category" %>
-  </div>
+<div class="field-name-new-category">
+    <h2 class="Add name">Add a Category Icon Link</h2>
+      <%= f.text_field :icon, class: "login-field" %>
+    </div>
 <% end %>
+
+
