@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="murple_logo.png" alt="logo" width="140" height="auto" />
+  <img src="./public/logo.png" alt="logo" width="140" height="auto" />
   <br/>
   <h3><b>Pennywisepal</b></h3>
 </div>
@@ -57,23 +57,19 @@ To run the project, you'll need the following:
 
 1. Clone the repository to your local machine:
 
-   ```sh
    git clone https://github.com/your-username/pennywisepal.git
 
 2. Navigate to the project directory:
 
-  ```sh
   cd pennywisepal
 
 3. Install the required gems:
 
-  ```sh
   Copy code
   bundle install
 
 4. Set up the database:
 
-  ```sh
   Copy code
   rails db:setup
 
@@ -83,18 +79,15 @@ To run the project, you'll need the following:
 To run the project, execute the following command:
 
 
-```sh
   rails server
-```
+
 Then, open your web browser and visit http://localhost:3000 to access Pennywisepal.
 
 ### Run tests
 
 To run tests, run the following command:
 
-```sh
   bundle exec rspec
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
