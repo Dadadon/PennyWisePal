@@ -84,6 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: PennyWisePal_production
-  username: PennyWisePal
-  password: <%= ENV["PENNYWISEPAL_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
