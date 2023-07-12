@@ -1,0 +1,24 @@
+<%= form_with model: @payment, url: category_payments_path(@category), method: :post, local: true, html: { class: "new-entity-form" } do |f| %>
+  <div class="new-entity-header">
+    <div class ="back-arrow">
+      <%= link_to category_path(@category) do %>
+        <%= image_tag "back_arrow.png", alt: "Back Arrow", class: "back-arrow-img" %>
+      <% end %>
+    </div>
+    <h2>ADD PAYMENT</h2>
+    <%= f.submit "ADD", class: "submit-new-mov" %>
+  </div>
+  <div class = "new-mov-body">
+    <div class="entry-field">
+      <%= f.text_field :name, autocomplete: "Name", placeholder: "Name", class: "login-field" %>
+    </div>
+    <div class="entry-field">
+      <%= f.text_field :amount, autocomplete: "Amount", placeholder: "Amount", class: "login-field" %>
+    </div>
+    <div class="entry-field">
+      <% @categories.each do |category| %>
+        <p><%= check_box_tag 'payment[category_ids][]', category.id, @payment.categories.include?(category), multiple: true %><%= category.name %></p>
+       <% end %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<!-- app/views/categories/new.html.erb -->
+
+
+
+<%= form_for @category do |f| %>
+   <div class="new-category-header">
+      <div class ="back-arrow">
+        <%= link_to categories_path do %>
+          <%= image_tag "back_arrow.png", alt: "Back Arrow", class: "back-arrow-img" %>
+        <% end %>
+      </div>
+     <h1>New Category</h1>
+      <%= f.submit "Create", class: "cat-button" %>
+    </div>
+    <div class="field-name-new-category">
+    <h2 class="Add name">Add a Category name</h2>
+      <%= f.text_field :name, autocomplete: "category name", placeholder: "Name", class: "login-field" %>
+    </div>
+
+
+<div class="field-name-new-category">
+    <h2 class="Add name">Add a Category Icon Link</h2>
+      <%= f.text_field :icon, class: "login-field" %>
+    </div>
+<% end %>
+
+
